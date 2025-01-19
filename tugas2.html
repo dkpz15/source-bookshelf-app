@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Source Bookshelf</title>
+    <link rel="stylesheet" href="tugas2.css" />
+    <link rel="icon" href="img/logo.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Source Bookshelf</h1>
+      <div class="card">
+        <h2>Insert New Book</h2>
+        <div class="card-insert">
+          <form id="book-form">
+            <label for="title-input">Title</label>
+            <input type="text" id="title-input" placeholder="Title" required />
+            <label for="author-input">Author</label>
+            <input
+              type="text"
+              id="author-input"
+              placeholder="Author"
+              required
+            />
+            <label for="year-input">Year</label>
+            <input type="number" id="year-input" placeholder="Year" required />
+            <div class="checkbox-finished">
+              <label for="is-complete-checkbox">Finished Reading?</label>
+              <input type="checkbox" id="is-complete-checkbox" />
+            </div>
+            <button type="submit">Put Book On The Shelf</button>
+          </form>
+        </div>
+
+        <h2 class="h2-search">Search Book</h2>
+        <div class="card-search">
+          <label for="inputSearch">Title</label>
+          <input type="text" id="input-search" placeholder="Search" />
+          <button type="submit" id="button-search">Search</button>
+        </div>
+
+        <div class="shelves">
+          <div class="shelf-left">
+            <h2>Unfinished Reading</h2>
+            <div class="shelf" id="unfinishedBooks"></div>
+          </div>
+          <div class="shelf-right">
+            <h2>Finished Reading</h2>
+            <div class="shelf" id="finishedBooks"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="tugas2.js"></script>
+  </body>
+</html>
